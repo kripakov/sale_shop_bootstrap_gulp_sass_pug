@@ -241,7 +241,6 @@ body
 	text-decoration: none
 .ulmnu
 	list-style-type: none
-	margin-top: 23px
 	padding: 0
 	li
 		display: inline-block
@@ -249,13 +248,15 @@ body
 
 /* before after   ========================================================================*/
 
-.before
+.before-border
 	content: ''
 	width: 100%
 	height: 100%
 	position: absolute
-	left: 0
-	top: 0
+	-webkit-transform: translate(-50%,0)
+	-ms-transform: translate(-50%,0)
+	transform: translate(-50%,0)
+
 .dollar
 	content: '$';
 /* before after END  =====================================================================*/
@@ -281,8 +282,11 @@ body
 	display: inline-block
 	width: 82px
 	padding: 25px 15px 25px 15px
+	margin: 0 15px 0 15px
 	span
 		color: #FFF
+.block-text
+	line-height: 68px
 .block-sale
 	display: inline-block
 	padding: 25px 10px 25px 10px
@@ -317,6 +321,54 @@ body
 
 /* MENU ===================================================================================*/
 
+ul#menu-bar
+	margin: 0
 
+#ddmenu
+    display: block
+    text-align: center
+    letter-spacing: normal
+
+#ddmenu ul
+	margin: 0 auto
+	padding: 0
+	text-align: center
+	width: 100%
+	font-size: 0
+	display: inline-block
+	list-style: none
+	position: relative
+	z-index: 999999990
+	max-width: 1400px
+	border-radius: 4px
+
+#ddmenu li
+	margin: 0
+	padding: 8px 20px 8px 20px
+	font-size: 16px
+	display: inline-block
+	*display: inline
+	position: relative
+	color: #eee
+	line-height: 46px
+	vertical-align: middle
+	transition: background-color 0.2s
+	outline: none
+	-moz-user-select: none
+    -webkit-user-select: none
+    -ms-user-select: none
+#ddmenu li
+	&:first-child
+		border-left: 1px solid  #eeeeee
+		border-right: 1px solid  #eeeeee
+	&:not(:first-child)
+		border-right: 1px solid  #eeeeee
+
+#ddmenu 
+	li
+		a 
+			font-family: 'Aller_Lt'
+			text-decoration: none
+			color: $bl
 
 /* MENU END             ===================================================================*/

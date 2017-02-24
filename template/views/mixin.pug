@@ -10,7 +10,7 @@ mixin pro(img,text,price)
 	.block-pro
 		.pro-description
 			img(src=img)
-			.description
+			.desc
 				+price(price)(class="lefter")
 				.block-text
-					p.f17px.Aller-Bdlt=text
+					a(href='javascript: void();').f17px.Aller-Bdlt=text

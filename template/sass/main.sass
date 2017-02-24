@@ -5,12 +5,133 @@ body
 	color: #000
 nav#ddmenu
 	@extend .ulmnu;
+section.header
+	background-color: $bl
+	.top-mnu
+		.search
+			line-height: 53px
+		.login
+			line-height: 53px
+			margin-left: 19px
+			float: left
+			p 
+				font-size: 16px
+section.header-nav
+	.top-nav
+		.star, .basket
+			line-height: 56px
+			.count-st, .count-bs
+				margin-left: 12px
+				padding: 5px
+				height: 20px
+				border-radius: 6px
+				font-size: 14px
+				color: #FFF
+				text-decoration: none
+		.star
+			.count-st
+				background-color: #adadad
+		.basket
+			.count-bs
+				background-color: #57c5a0
+section.main-head
+	.row-eq-height
+		display: -webkit-box
+		display: -webkit-flex
+		display: -ms-flexbox
+		display:         flex
+	.img
+		background-color: #efece9
+section.collection-slider
+	background-color: #2e2e2e
+	.container
+		.collection
+			.col-sm-2 
+				height: 10px
+				margin-top: 15px
+				margin-right: 15px
+				margin-bottom: 25px
+				background-color: #57c5a0
+	.collection-shoes
+		.shoes
+			text-align: center
+			margin-left: 15px
+			a
+				text-decoration: none
+				font-size: 18px
+				color: #787878
+			p 
+				margin-top: 4px
+				color: #787878
+				font-size: 14px
+section.collection-sl-img
+	background-color: #242424
+	padding: 25px 0 25px 0
+	.sale
+		img
+			width: 300px
+			height: 214px
+		a 
+			position: absolute
+			display: inline-block
+			padding: 6px 35px
+			top: 50%
+			left: 15px
+			background-color: #393939
+			opacity: .85
+			font-size: 28px
+			text-transform: uppercase
+			color: #FFF
+			transform: translateY(-50%)
+section.collection
+	.sellers
+		position: relative
+		top: 20px
+		right: 0
+		padding-bottom: 20px
+		p 
+			margin-top: 0
+		.btn 
+			display: block
+			border: 1px solid #bcb5a7
+			padding: 8px 10px 8px 10px
+			a
+				color: #c3bcaf	
 section.collection
 	background-color: #ebe7df
+	.carousel-coll
+		position: relative		
+		.show
+			position: absolute
+			right: 0
+			bottom: 20px
+			.btn 
+				display: block
+				border: 1px solid #bcb5a7
+				padding: 8px 10px 8px 10px
+				a
+					color: #c3bcaf
+
+	.arrivals
+		.block-price
+			margin-left: 15px 
+			.block-text
+				line-height: 68px
 	.description
 		margin-top: 95px
 		margin-bottom: 45px
 		position: relative
+		&::before
+			height: 2px
+			background-color: #dfdbd4
+			width: 100%
+			display: block
+			bottom: -30px
+			left: 50%
+			top: -45px
+			@extend .before-border;
+		.best
+
 		.free, .test
 			background-color: #dfdbd4
 			margin-right: 15px
@@ -22,20 +143,14 @@ section.collection
 				font-size: 14px
 				text-align: justify
 		&::before
-			position: absolute
-			content: ''
 			height: 2px
 			background-color: #dfdbd4
 			width: 100%
 			display: block
 			bottom: -30px
 			left: 50%
-			-webkit-transform: translate(-50%,0)
-			-ms-transform: translate(-50%,0)
-			transform: translate(-50%,0)
-			-webkit-border-radius: 10em
-			border-radius: 10em
 			top: -45px
+			@extend .before-border;
 		.test
 
 		.blog
@@ -118,6 +233,7 @@ section.public
 
 section.footer
 	background-color: #2e2e2e
+	padding-top: 15px
 	.footer-text
 		p 
 			font-size: 14px
