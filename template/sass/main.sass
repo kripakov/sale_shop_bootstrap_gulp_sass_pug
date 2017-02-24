@@ -1,0 +1,138 @@
+@import "var"
+@import "core"
+body
+	font: 100%/1.5em Arial, Helvetica, sans-serif
+	color: #000
+nav#ddmenu
+	@extend .ulmnu;
+section.collection
+	background-color: #ebe7df
+	.description
+		margin-top: 95px
+		margin-bottom: 45px
+		position: relative
+		.free, .test
+			background-color: #dfdbd4
+			margin-right: 15px
+			height: 246px
+			h4
+				text-transform: uppercase
+				color: $bl
+			p
+				font-size: 14px
+				text-align: justify
+		&::before
+			position: absolute
+			content: ''
+			height: 2px
+			background-color: #dfdbd4
+			width: 100%
+			display: block
+			bottom: -30px
+			left: 50%
+			-webkit-transform: translate(-50%,0)
+			-ms-transform: translate(-50%,0)
+			transform: translate(-50%,0)
+			-webkit-border-radius: 10em
+			border-radius: 10em
+			top: -45px
+		.test
+
+		.blog
+			background-color: #dfdbd4
+			h4
+				color: $bl
+			.news
+				margin-bottom: 35px
+				margin-right: 15px
+				.data
+					float: left 
+					display: block
+					padding: 7px 15px 7px 15px
+					background-color: $gr
+					text-align: center
+					margin-right: 20px
+					span
+						text-transform: uppercase
+					.month
+
+					.numb
+				p 
+
+					span
+section.coll-widget
+	background-color: #242424
+	.row.widget
+		.text-widget
+			p 
+				color: #a4a4a4
+				text-align: justify
+		.twitter-widget, .text-widget
+			h4
+				color: #929292
+			.tw-label
+				p
+					color: #a4a4a4
+					span
+						color: #386a59
+		.flickr-widget
+			h4
+				color: #929292
+			ul 
+				@extend .ulmnu;
+				li 
+					a 
+						img 
+							width: 75px
+							height: 65px
+							margin-bottom: 5px 
+section.public
+	background-color: $bl
+	border-top: 1px solid #1c1c1c
+	height: 120px
+	padding-top: 15px
+	.row.news
+		.news-input
+			margin-top: 14px
+			span 
+				background-color: #7d7d7d
+			input 
+				background-color: #2e2e2e
+		.social	
+			margin-top: -14px
+			nav
+				ul
+					text-align: center 
+					@extend .ulmnu;
+				li
+					display: inline-block
+					height: 33px
+					width: 33px
+					padding: 5px
+					background-color: #2e2e2e
+					line-height: 20px
+					&:not(:last-child)
+						margin-right: 3px
+					a 
+						margin-left: 
+
+section.footer
+	background-color: #2e2e2e
+	.footer-text
+		p 
+			font-size: 14px
+			font-family: 'Aller_Rg'
+			color: #929292
+			line-height: 17px
+	nav
+		ul 
+			@extend .ulmnu;
+			li 
+				a
+					text-decoration: none
+					font-size: 14px
+					color: #929292
+					font-family: 'Aller_Rg'
+					cursor: pointer
+					&:hover
+						color: #FFF

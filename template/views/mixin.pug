@@ -1,0 +1,16 @@
+mixin price(name)
+	.block-price.bgc-color-gren&attributes(attributes)
+		span.Aller_Bd= name
+		
+mixin sale(name)
+	.block-sale.bgc-color-black
+		span.Aller_Bd= name
+
+mixin pro(img,text,price)
+	.block-pro
+		.pro-description
+			img(src=img)
+			.description
+				+price(price)(class="lefter")
+				.block-text
+					p.f17px.Aller-Bdlt=text
